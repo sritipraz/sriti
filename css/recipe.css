@@ -1,19 +1,21 @@
 .heading{
     color:#A4A400;
-    background-color: #F0F0F0;
     font-family: Lucida Sans Unicode,Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 18pt;
     
 }
-
+.heading span{
+    background-color: #F0F0F0;
+    letter-spacing: 0.25em;
+}
 #mainheading{
     text-align: center;
     font-size: 22pt;
 }
 
 body{
-    
+    background-image: url("../images/recipe/silverware.jpg");
     color: #404040;
     font-size: 11pt;
     font-family: Georgia,Garamond,sans-serif;
@@ -38,7 +40,11 @@ font-weight: bold;
 
 }
 
-/* .copyright
+.copyright
 {
     text-align:right ;
-} */
+}
+
+ul {
+    list-style-image: url('../images/recipe/pie_icon.gif');
+  }
