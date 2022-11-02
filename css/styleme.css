@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(90, 87, 87);
+    color: white;
+}
+
+.heading{
+    color: rgb(148, 148, 227);
+}
+#movie a{
+    color:red;
+}
+header p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#neighbors ul li{
+    font-style: italic;
+}
+
+#movie p{
+    font-style: italic;
+}
+
+header p span:first-child{
+    color: rgb(255, 132, 0);
+}
+
+
+header p span:last-child{
+    color: #ff0090;
+}
