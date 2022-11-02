@@ -8,6 +8,12 @@ body{
 }
 #movie a{
     color:red;
+    text-decoration: none;
+    
+}
+#movie a:hover{
+    text-decoration: underline;
+    
 }
 header p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,4 +34,10 @@ header p span:first-child{
 
 header p span:last-child{
     color: #ff0090;
+}
+html{
+    font-size: 16px;
+}
+p::first-letter{
+    font-size: 1.5rem;
 }
