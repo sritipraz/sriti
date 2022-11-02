@@ -1,0 +1,44 @@
+.heading{
+    color:#A4A400;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode,Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 18pt;
+    
+}
+
+#mainheading{
+    text-align: center;
+    font-size: 22pt;
+}
+
+body{
+    
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia,Garamond,sans-serif;
+}
+
+body>a{
+    color:#A4A400
+}
+#linethrough{
+    text-decoration: line-through;
+}
+.bold{
+font-weight: bold;
+}
+.comment{
+    /* text-align: center; */
+    /* text-indent: 5%; */
+    margin-left:2%;
+    margin-right: 2%;
+    font-style: italic;
+    background-color: #FFFFA8;
+
+}
+
+/* .copyright
+{
+    text-align:right ;
+} */
