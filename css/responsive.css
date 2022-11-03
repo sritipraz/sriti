@@ -24,19 +24,27 @@
         'c1 c2 c3'
         'c1 c2 c3'
         'f f f'
-        
+        ;
+       
     }
     
 }
 #header{
     background-color: rgb(136, 136, 238);
     grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 #footer{
     grid-area: f;
     background-color: rgb(53, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 #menuContainer {
