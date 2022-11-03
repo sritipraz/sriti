@@ -1,0 +1,50 @@
+#header{
+    background-color: rgb(136, 136, 238);
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-container {
+    grid-area: m;
+    display: flex;
+    background-color:  rgb(53, 105, 105);
+    justify-content:flex-start;
+}
+
+#menu-container > div{
+    width: 15%;
+   margin: 0 0 0 10px;
+   font-weight: 300;
+   color: white;
+   border-right:1px solid black;
+}
+
+#footer{
+    background-color: rgb(53, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#column1
+{
+    background-color: rgb(232, 226, 226);
+}
+#column2
+{
+    background-color: rgb(102, 96, 96);
+}
+#column3
+{
+    background-color: rgb(154, 145, 145);
+}
+
+
+
+#menu1, #menu2 ,#menu3{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
