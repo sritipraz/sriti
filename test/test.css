@@ -1,0 +1,33 @@
+#container{
+    display:grid;
+    grid-template-columns: 8% 8%;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-areas: 
+    'lbf txf'
+    'lbl txl'
+    'lbo ooo'
+    ;
+}
+
+#label-fname{
+    grid-area: lbf;
+}
+
+#text-fname{
+    grid-area: txf;
+}
+
+#label-lname{
+    grid-area: lbl;
+}
+
+#text-lname{
+    grid-area: txl;
+}
+
+#label-option{
+    grid-area: lbo;
+}
+#option{
+    grid-area: ooo;
+}

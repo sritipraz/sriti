@@ -4,8 +4,8 @@ function eventhandler() {
     
     console.log("Expected output of max(3, 5) is 5  " + myFunctionTest(5, max(3, 5)));
     
-    let a = [3, 5, 7];
-    console.log("Expected output of maxOfThree(3,5,7) is 7  " + myFunctionTest(7, maxOfThree(a)));
+    // let a = [3, 5, 7];
+    console.log("Expected output of maxOfThree(3,5,7) is 7  " + myFunctionTest(7, maxOfThree([3, 5, 7])));
     
     console.log("Expected output of isVowel(\"a\") is true  " + myFunctionTest(true,isVowel("a")));
     
@@ -17,6 +17,7 @@ function eventhandler() {
 
     console.log("Expected output of findLongestWord([\"cat\",\"note\",\"pencil\",\"gummy\"]) is 6 " + myFunctionTest(6, findLongestWord(["cat","note","pencil","gummy"])));
     console.log("Expected output of filterLongWords([\"cat\",\"note\",\"pencil\",\"gummy\"]) is [\"pencil\",\"gummy\"] " + myFunctionTest(JSON.stringify(["pencil","gummy"]), JSON.stringify(filterLongWords(["cat","note","pencil","gummy"],4))));
+
 }
 function myFunctionTest(expected, found) {
     if (expected === found) {
