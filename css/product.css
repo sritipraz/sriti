@@ -1,0 +1,57 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+    margin:auto;
+}
+
+.input-section{
+    width:49%;
+    padding: 5px 2px 5px 0
+}
+
+.user-input{
+    padding: 2px 0 3px 0;
+    width:90%;
+}
+h3{
+    margin-left: 10%;
+}
+#product-title{
+    background-color: rgb(8, 178, 220);
+    color: white;
+    height:50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#product-title >span{
+    font-weight: bold;
+    font-size: large;
+}
+#button-section{
+    margin-right: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-type{
+    margin:10px 20px 0 20px ;
+    font-size: medium;
+    background-color: white;
+    padding: 4px 4px 4px 4px;
+    border-radius: 10%;
+}
+#reset-button
+{
+    color: rgb(17, 17, 77);
+    border-color: rgb(17, 17, 77);
+}
+#add-button{
+    color:rgb(8, 178, 220) ;
+    border-color: rgb(8, 178, 220) ;
+}
+#cancel-button{
+    color:red;
+    border-color: red;
+}

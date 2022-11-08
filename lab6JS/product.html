@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+<body>
+    <div id="product-title">
+        <span>MUM Golden Dome Market ::: SRM System</span>
+    </div>
+
+    <h3>New Product Form</h3>
+    <div id="container">
+        <div class="input-section">
+            <div>
+                <label for="product">Product Number</label>
+            </div>
+            <input class="user-input" type="text" name="product">
+        </div>
+
+        <div class="input-section">
+            <div>
+                <label for="qtyStock">Quantity in stock</label>
+            </div>
+            <input class="user-input" type="text" name="qtyStock" placeholder="0.0">
+        </div>
+        <div class="input-section">
+            <div>
+                <label for="name">Name:</label>
+            </div>
+            <input class="user-input" type="text" name="name">
+        </div>
+
+        <div class="input-section">
+            <div>
+                <label for="supplierOptions">Supplier:</label>
+            </div>
+
+            <select class="user-input" name="supplierOptions">
+                <option style="display:none;" selected>Select a supplier</option>
+                <option>Supplier A</option>
+                <option>Supplier B</option>
+                <option>Supplier C</option>
+            </select>
+
+        </div>
+        <div class="input-section">
+            <div>
+                <label class="form-control" placeholder="Select" for="unit-price">Unit Price:</label>
+            </div>
+            <input class="user-input" type="text" name="unit-price" placeholder="0.0">
+        </div>
+
+        <div class="input-section">
+            <div>
+                <label for="date-supplied">Date supplied:</label>
+            </div>
+            <input type="text" class="user-input" name="date-supplied" placeholder="yyyy-mm-dd">
+        </div>
+    </div>
+    <div id="button-section">
+        <button class="button-type" id="reset-button" type="button">Reset</button>
+        <button class="button-type" id="cancel-button" type="button">Cancel</button>
+        <button class="button-type" id="add-button" type="button">Add Product</button>
+    </div>
+
+
+</body>
+
+</html>
