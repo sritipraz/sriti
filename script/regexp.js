@@ -2,9 +2,15 @@ window.onload=eventHandler
 
 function eventHandler(){
     const submitButton=document.getElementById("submit-button");
-    
-    submitButton.onclick= submitClicked;
-    
+   // console.log("Check");
+    //submitButton.onclick= submitClicked;
+//     var p=10;
+//     test();
+//     function test()
+// {
+//     console.log(p);
+//     let p=5;
+// }
 }
 
 function submitClicked()

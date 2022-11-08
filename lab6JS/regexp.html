@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Document</title>
-<link rel="stylesheet" href="../css/regexp.css">
+    <link rel="stylesheet" href="../css/regexp.css">
 
 </head>
 
@@ -13,40 +13,40 @@
 
 
 
-    <form>
-        <div class="input-section">
+    <form action="https://google.com" validate>
+        
             <div>
                 <label for="email">Email</label>
             </div>
             <input class="user-input" type="text" name="email">
-        </div>
+        
 
 
-        <div class="input-section">
             <div>
                 <label for="password">Password:</label>
             </div>
-            <input class="user-input" id="password" type="text" name="password" >
-            <!-- pattern="[A-Z]{1}" title="At least on number and one uppercase" -->
-        </div>
-        <div class="input-section">
+            <input class="user-input" id="password" type="text" name="password"
+                pattern="(\W\w)?([A-Z]{1}.*?[0-1]{1})|([0-1]{1}.*?[A-Z]{1}).{10,}$" title="At least on number and one uppercase" required>
+            <!-- pattern="[A-Z]{1}" title="At least on number and one uppercase" (\W\w)?([A-Z0-9]{1,})?.?([A-Z0-9]{1,}).{10,}$ ([A-Z]{1,})([0-9]{1,}).-->
+        
             <div>
                 <label for="url">URL:</label>
             </div>
-            <input class="user-input" id="url" type="text" name="url">
-        </div>
-
+            <input class="user-input" id="url" type="text" name="url" pattern="^https?://[a-zA-Z]{1,}\.com$"
+                title="Should start with http:// or https://" required>
         
-        <input type="checkbox" name="checkme">
-        <label for=""checkme"">Check me out</label>
-    
-    <div id="button-section">
-        <button class="button-type" id="submit-button" type="button">Submit</button>
+                <br>
 
-    </div>
-</form>
-<script src="../script/regexp.js"></script>
-    
+        <input type="checkbox" name="checkme">
+        <label for="" checkme"">Check me out</label>
+
+        <div id="button-section">
+            <button class="button-type" id="submit-button" type="submit">Submit</button>
+
+        </div>
+    </form>
+    <script src="../script/regexp.js"></script>
+
 </body>
 
 </html>
