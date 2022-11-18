@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Form</title>
+   <%if(isDayTime){%>
+   <link href="/css/day.css" rel="stylesheet">
+    <%}else{%>
+    <link href="/css/night.css" rel="stylesheet">
+    <%}%>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="nameTxt">Name</label>
+            <input type="text" name="nameTxt">
+            <label for="ageTxt">Age</label>
+            <input type="text" name="ageTxt">
+            <input type="submit" id="querybtn" value="Submit Query">
+    </form>
+    
+</body>
+</html>
