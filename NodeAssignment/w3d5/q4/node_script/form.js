@@ -10,3 +10,5 @@ let isDayTime=function(){
 }
 
 module.exports={isDay:isDayTime};
+
+//module.exports=isDayTime;

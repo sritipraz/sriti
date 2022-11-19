@@ -1,8 +1,41 @@
 window.onload = eventhandler;
+class Computer
+{
+constructor(cpu,ram,storage)
+{
+this.cpu=cpu;
+this.ram=ram;
+this.storage=storage;
+}
+
+runProgram(program)
+{
+console.log(`running ${program}`);
+}
+}
+
+class Laptop extends Computer{
+    constructor(cpu,ram,storage,battery)
+    {
+        super(cpu,ram,storage);
+        this.battery=battery;
+    }
+
+carryAround()
+{
+console.log("carrying laptop: cpu" + this.cpu +" ram: " + this.ram + " storage: " + this.storage + " battery: " + this.battery);
+}
+
+}
+
 
 
 function eventhandler() {
    
+    
+let l=new Laptop(8,16,"1TB",1000);
+l.runProgram("Notepad");
+l.carryAround();
     console.log("Expected output of max(3, 5) is 5  " + myFunctionTest(5, max(3, 5)));
 
     // let a = [3, 5, 7];

@@ -13,6 +13,7 @@ app.use(bodyparser.urlencoded({extended:false}))
 app.use('/css',express.static(path.join(__dirname,'public','styling')));
 app.get('/', (req, res) => {
     res.render('forms.ejs',{isDayTime:formScript.isDay()});
+    //res.render('forms.ejs',{isDayTime:formScript()});
 });
 
 
