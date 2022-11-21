@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <%- include("header")%>
+      </header>
+    
+    <div id="container">
+      <%products.forEach((x)=>{%>
+        <form class="productbox" action="/addToCart" method="post">
+          <h3><%=x.name%></h3>
+          <p>
+            Price: <%=x.price%> <br>
+            Description: <%=x.description%>
+          </p>
+          <input name="id" type="hidden" value=<%=x.id%>>
+          <input type="submit" value="Add to Cart">
+        </form>
+      <%});%>
+    </div>
+
+    <footer>
+      <%-include("footer")%>
+    </footer>
+  </body>
+</html>
