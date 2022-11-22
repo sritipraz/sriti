@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <form action="/addCookie" method="post">
+      <label for="keyCookie">Key:</label>
+      <input type="text" name="keyCookie"><br><br>
+      <label for="valueCookie">Value:</label>
+      <input type="text" name="valueCookie"><br><br>
+      <input type="submit" value="Add Cookie">
+      </form>
+
+      <div>
+        <table>
+          <tr>
+            <th>Keys</th>
+            <th>Values</th>
+          </tr>
+         
+          <%if(currentCookies.length>0) {currentCookies.forEach( keyValuePair => {%>
+            <tr>
+              <td>
+                <%=keyValuePair.key%>
+              </td>
+              <td>
+                <%=keyValuePair.value%>
+              </td>
+              </tr>
+              <%});}%>
+          </table>
+      </div>
+  </body>
+</html>

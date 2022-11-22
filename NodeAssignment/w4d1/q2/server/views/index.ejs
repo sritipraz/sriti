@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Person Form</title>
+    <%if(isDayTime){%>
+        <link href="/stylesheets/day.css" rel="stylesheet">
+         <%}else{%>
+         <link href="/stylesheets/night.css" rel="stylesheet">
+         <%}%>
+ </head>
+ <body>
+     <form action="/result" method="post">
+         <label for="nameTxt">Name</label>
+             <input type="text" name="nameTxt">
+             <label for="ageTxt">Age</label>
+             <input type="text" name="ageTxt">
+             <input type="submit" id="querybtn" value="Submit Query">
+     </form>
+     
+ </body>
+</html>
