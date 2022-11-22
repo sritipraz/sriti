@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width:100%
+}
+
+.productbox{
+  border-radius: 5%;
+  border: 2px solid black;
+  padding: 3%;
+  background-color: rgb(242, 242, 194);
+  margin: 2%;
+  width: 20%;
+  justify-content: space-between;
+}
+.productbox input[type="submit"]
+{
+  color:white;
+  background: rgba(12, 105, 205, 0.86);
+  
+}
+.productbox h3{
+  color: rgb(25, 110, 25);
+}
+
+body h1,h2{
+  margin-left:5%;
+  color: rgb(25, 110, 25);
+}
+
+footer p{
+  background-color: antiquewhite;
+  color:rgb(25, 110, 25);
+  text-align: center;
+
+}
