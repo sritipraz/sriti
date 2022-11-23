@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="/javascripts/cart.js"></script>
+  </head>
+  <body>
+    <header>
+      <%- include("header")%>
+      </header>
+      <a href="/">Home</a> <br>
+    <a id="cart" href="/showCart">view-cart</a>
+
+    <div id="container">
+    <%products.forEach((x)=>{%>
+    <div  class="productbox">
+          <h3><%=x.name%></h3>
+          <p>
+            Price: <%=x.price%> <br>
+            Description: <%=x.description%>
+          </p>
+          <input id="item" type="hidden" value=<%= x.id %> />
+          <input type="button" id="addToCart" value="Add to Cart"/>
+        </div>
+      <%});%>
+    </div>
+    <footer>
+      <%-include("footer")%>
+    </footer>
+  </body>
+</html>
